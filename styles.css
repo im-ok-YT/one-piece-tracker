@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#logo {
+    max-width: 250px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+#progress-container {
+    margin-bottom: 50px;
+}
+
+#overall-progress-bar {
+    width: 80%;
+    max-width: 700px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#overall-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #ffdd00, #ffaa00);
+    width: 0;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Saga and Arc Styles */
+.saga, .arc {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.saga:hover, .arc:hover {
+    transform: translateY(-5px);
+}
+
+.saga h2, .arc h3 {
+    margin: 0;
+}
+
+.saga h2 {
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+.arc h3 {
+    font-size: 1.25em;
+    color: #87ceeb;
+}
+
+/* Collapsible Content */
+.collapsible-content {
+    display: none;
+    padding-top: 10px;
+}
+
+.collapsible-content.active {
+    display: block;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #32cd32, #228b22);
+    width: 0;
+    transition: width 0.4s ease-in-out;
+}
+
+.episode-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.episode-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+.episode-list li:last-child {
+    border-bottom: none;
+}
+
+.episode-list li input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #ffd700;
+}
+
+.episode-list li label {
+    cursor: pointer;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.episode-list li label:hover {
+    color: #ffd700;
+}
